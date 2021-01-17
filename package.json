@@ -11,8 +11,16 @@
     },
     "devDependencies": {
         "axios": "^0.21",
+        "husky": "^4.3.8",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
-        "postcss": "^8.1.14"
+        "postcss": "^8.1.14",
+        "prettier": "2.2.1",
+        "pretty-quick": "^3.1.0"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "pretty-quick --staged"
+        }
     }
 }
